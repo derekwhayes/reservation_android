@@ -21,7 +21,7 @@
 
 
     <ImageView
-        android:id="@+id/tables"
+        android:id="@+id/table1"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:contentDescription="Round table."
@@ -34,7 +34,7 @@
         tools:ignore="DuplicateIds" />
 
     <ImageView
-        android:id="@+id/tables"
+        android:id="@+id/table2"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:contentDescription="Round table."
@@ -48,7 +48,7 @@
         tools:ignore="DuplicateIds"/>
 
     <ImageView
-        android:id="@+id/tables"
+        android:id="@+id/table3"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:contentDescription="Round table."
@@ -62,7 +62,7 @@
         tools:ignore="DuplicateIds"/>
 
     <ImageView
-        android:id="@+id/tables"
+        android:id="@+id/table4"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:contentDescription="Round table."
@@ -76,7 +76,7 @@
         tools:ignore="DuplicateIds"/>
 
     <ImageView
-        android:id="@+id/tables"
+        android:id="@+id/table5"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:contentDescription="Round table."
@@ -90,7 +90,7 @@
         tools:ignore="DuplicateIds"/>
 
     <ImageView
-        android:id="@+id/tables"
+        android:id="@+id/table6"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:contentDescription="Round table."
@@ -100,11 +100,10 @@
         app:layout_constraintStart_toStartOf="@id/floorPlanView"
         app:layout_constraintEnd_toEndOf="@id/floorPlanView"
         android:translationX="30dp"
-        android:translationY="40dp"
-        tools:ignore="DuplicateIds"/>
+        android:translationY="40dp" />
 
     <ImageView
-        android:id="@+id/booths"
+        android:id="@+id/booth1"
         android:layout_width="40dp"
         android:layout_height="60dp"
         android:contentDescription="Booth."
@@ -114,11 +113,10 @@
         app:layout_constraintStart_toStartOf="@id/floorPlanView"
         app:layout_constraintEnd_toEndOf="@id/floorPlanView"
         android:translationX="-30dp"
-        android:translationY="-110dp"
-        tools:ignore="DuplicateIds"/>
+        android:translationY="-110dp" />
 
     <ImageView
-        android:id="@+id/booths"
+        android:id="@+id/booth2"
         android:layout_width="40dp"
         android:layout_height="60dp"
         android:contentDescription="Booth."
@@ -128,11 +126,10 @@
         app:layout_constraintStart_toStartOf="@id/floorPlanView"
         app:layout_constraintEnd_toEndOf="@id/floorPlanView"
         android:translationX="50dp"
-        android:translationY="-110dp"
-        tools:ignore="DuplicateIds"/>
+        android:translationY="-110dp" />
 
     <ImageView
-        android:id="@+id/booths"
+        android:id="@+id/booth3"
         android:layout_width="40dp"
         android:layout_height="60dp"
         android:contentDescription="Booth."
@@ -142,11 +139,10 @@
         app:layout_constraintStart_toStartOf="@id/floorPlanView"
         app:layout_constraintEnd_toEndOf="@id/floorPlanView"
         android:translationX="130dp"
-        android:translationY="-110dp"
-        tools:ignore="DuplicateIds"/>
+        android:translationY="-110dp" />
 
     <ImageView
-        android:id="@+id/rot_booths"
+        android:id="@+id/rot_booth1"
         android:layout_width="60dp"
         android:layout_height="40dp"
         android:contentDescription="Booth."
@@ -156,11 +152,10 @@
         app:layout_constraintStart_toStartOf="@id/floorPlanView"
         app:layout_constraintEnd_toEndOf="@id/floorPlanView"
         android:translationX="130dp"
-        android:translationY="-40dp"
-        tools:ignore="DuplicateIds"/>
+        android:translationY="-40dp" />
 
     <ImageView
-        android:id="@+id/rot_booths"
+        android:id="@+id/rot_booth2"
         android:layout_width="60dp"
         android:layout_height="40dp"
         android:contentDescription="Booth."
@@ -170,11 +165,10 @@
         app:layout_constraintStart_toStartOf="@id/floorPlanView"
         app:layout_constraintEnd_toEndOf="@id/floorPlanView"
         android:translationX="130dp"
-        android:translationY="100dp"
-        tools:ignore="DuplicateIds"/>
+        android:translationY="100dp" />
 
     <ImageView
-        android:id="@+id/rot_booths"
+        android:id="@+id/rot_booth3"
         android:layout_width="60dp"
         android:layout_height="40dp"
         android:contentDescription="Booth."
@@ -184,7 +178,17 @@
         app:layout_constraintStart_toStartOf="@id/floorPlanView"
         app:layout_constraintEnd_toEndOf="@id/floorPlanView"
         android:translationX="130dp"
-        android:translationY="30dp"
-        tools:ignore="DuplicateIds"/>
+        android:translationY="30dp" />
+
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_arrow_back_black_24dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:onClick="returnToMainActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
