@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:text="Where do you want to sit?"
         style="@style/WaiterText"
+        android:layout_marginTop="75dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toRightOf="@id/imageView"
         app:layout_constraintRight_toRightOf="parent"
