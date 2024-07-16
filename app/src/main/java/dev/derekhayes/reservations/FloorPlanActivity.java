@@ -22,9 +22,6 @@ public class FloorPlanActivity extends AppCompatActivity {
         Intent intent = getIntent();
         int numGuests = intent.getIntExtra("numGuests", 6);
 
-        if (numGuests <= 4) {
-            TextView testTextView = findViewById(R.id.test);
-            testTextView.setText(getResources().getString(R.string.test, numGuests));
-        }
+
     }
 }

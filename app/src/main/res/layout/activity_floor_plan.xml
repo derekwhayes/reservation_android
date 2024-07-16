@@ -7,14 +7,184 @@
     android:layout_height="match_parent"
     tools:context=".FloorPlanActivity">
 
-    <TextView
-        android:id="@+id/test"
+    <ImageView
+        android:id="@+id/floorPlanView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="hello!"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:contentDescription="Restaraunt floor plan."
+        android:src="@drawable/floorplan"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/tables"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="Round table."
+        android:src="@drawable/boldroundtable"
+        app:layout_constraintTop_toTopOf="@id/floorPlanView"
+        app:layout_constraintBottom_toBottomOf="@id/floorPlanView"
+        app:layout_constraintStart_toStartOf="@id/floorPlanView"
+        app:layout_constraintEnd_toEndOf="@id/floorPlanView"
+        android:translationX="-130dp"
+        tools:ignore="DuplicateIds" />
+
+    <ImageView
+        android:id="@+id/tables"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="Round table."
+        android:src="@drawable/boldroundtable"
+        app:layout_constraintTop_toTopOf="@id/floorPlanView"
+        app:layout_constraintBottom_toBottomOf="@id/floorPlanView"
+        app:layout_constraintStart_toStartOf="@id/floorPlanView"
+        app:layout_constraintEnd_toEndOf="@id/floorPlanView"
+        android:translationX="-130dp"
+        android:translationY="-90dp"
+        tools:ignore="DuplicateIds"/>
+
+    <ImageView
+        android:id="@+id/tables"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="Round table."
+        android:src="@drawable/boldroundtable"
+        app:layout_constraintTop_toTopOf="@id/floorPlanView"
+        app:layout_constraintBottom_toBottomOf="@id/floorPlanView"
+        app:layout_constraintStart_toStartOf="@id/floorPlanView"
+        app:layout_constraintEnd_toEndOf="@id/floorPlanView"
+        android:translationX="-60dp"
+        android:translationY="-30dp"
+        tools:ignore="DuplicateIds"/>
+
+    <ImageView
+        android:id="@+id/tables"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="Round table."
+        android:src="@drawable/boldroundtable"
+        app:layout_constraintTop_toTopOf="@id/floorPlanView"
+        app:layout_constraintBottom_toBottomOf="@id/floorPlanView"
+        app:layout_constraintStart_toStartOf="@id/floorPlanView"
+        app:layout_constraintEnd_toEndOf="@id/floorPlanView"
+        android:translationX="-60dp"
+        android:translationY="40dp"
+        tools:ignore="DuplicateIds"/>
+
+    <ImageView
+        android:id="@+id/tables"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="Round table."
+        android:src="@drawable/boldroundtable"
+        app:layout_constraintTop_toTopOf="@id/floorPlanView"
+        app:layout_constraintBottom_toBottomOf="@id/floorPlanView"
+        app:layout_constraintStart_toStartOf="@id/floorPlanView"
+        android:translationX="30dp"
+        android:translationY="-30dp"
+        app:layout_constraintEnd_toEndOf="@id/floorPlanView"
+        tools:ignore="DuplicateIds"/>
+
+    <ImageView
+        android:id="@+id/tables"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="Round table."
+        android:src="@drawable/boldroundtable"
+        app:layout_constraintTop_toTopOf="@id/floorPlanView"
+        app:layout_constraintBottom_toBottomOf="@id/floorPlanView"
+        app:layout_constraintStart_toStartOf="@id/floorPlanView"
+        app:layout_constraintEnd_toEndOf="@id/floorPlanView"
+        android:translationX="30dp"
+        android:translationY="40dp"
+        tools:ignore="DuplicateIds"/>
+
+    <ImageView
+        android:id="@+id/booths"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:contentDescription="Booth."
+        android:src="@drawable/boldbooth"
+        app:layout_constraintTop_toTopOf="@id/floorPlanView"
+        app:layout_constraintBottom_toBottomOf="@id/floorPlanView"
+        app:layout_constraintStart_toStartOf="@id/floorPlanView"
+        app:layout_constraintEnd_toEndOf="@id/floorPlanView"
+        android:translationX="-30dp"
+        android:translationY="-110dp"
+        tools:ignore="DuplicateIds"/>
+
+    <ImageView
+        android:id="@+id/booths"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:contentDescription="Booth."
+        android:src="@drawable/boldbooth"
+        app:layout_constraintTop_toTopOf="@id/floorPlanView"
+        app:layout_constraintBottom_toBottomOf="@id/floorPlanView"
+        app:layout_constraintStart_toStartOf="@id/floorPlanView"
+        app:layout_constraintEnd_toEndOf="@id/floorPlanView"
+        android:translationX="50dp"
+        android:translationY="-110dp"
+        tools:ignore="DuplicateIds"/>
+
+    <ImageView
+        android:id="@+id/booths"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:contentDescription="Booth."
+        android:src="@drawable/boldbooth"
+        app:layout_constraintTop_toTopOf="@id/floorPlanView"
+        app:layout_constraintBottom_toBottomOf="@id/floorPlanView"
+        app:layout_constraintStart_toStartOf="@id/floorPlanView"
+        app:layout_constraintEnd_toEndOf="@id/floorPlanView"
+        android:translationX="130dp"
+        android:translationY="-110dp"
+        tools:ignore="DuplicateIds"/>
+
+    <ImageView
+        android:id="@+id/rot_booths"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:contentDescription="Booth."
+        android:src="@drawable/boldboothrot"
+        app:layout_constraintTop_toTopOf="@id/floorPlanView"
+        app:layout_constraintBottom_toBottomOf="@id/floorPlanView"
+        app:layout_constraintStart_toStartOf="@id/floorPlanView"
+        app:layout_constraintEnd_toEndOf="@id/floorPlanView"
+        android:translationX="130dp"
+        android:translationY="-40dp"
+        tools:ignore="DuplicateIds"/>
+
+    <ImageView
+        android:id="@+id/rot_booths"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:contentDescription="Booth."
+        android:src="@drawable/boldboothrot"
+        app:layout_constraintTop_toTopOf="@id/floorPlanView"
+        app:layout_constraintBottom_toBottomOf="@id/floorPlanView"
+        app:layout_constraintStart_toStartOf="@id/floorPlanView"
+        app:layout_constraintEnd_toEndOf="@id/floorPlanView"
+        android:translationX="130dp"
+        android:translationY="100dp"
+        tools:ignore="DuplicateIds"/>
+
+    <ImageView
+        android:id="@+id/rot_booths"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:contentDescription="Booth."
+        android:src="@drawable/boldboothrot"
+        app:layout_constraintTop_toTopOf="@id/floorPlanView"
+        app:layout_constraintBottom_toBottomOf="@id/floorPlanView"
+        app:layout_constraintStart_toStartOf="@id/floorPlanView"
+        app:layout_constraintEnd_toEndOf="@id/floorPlanView"
+        android:translationX="130dp"
+        android:translationY="30dp"
+        tools:ignore="DuplicateIds"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
