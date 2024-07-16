@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Reservations</string>
+    <string name="test">You did it! Number of Guests: %d</string>
 </resources>
