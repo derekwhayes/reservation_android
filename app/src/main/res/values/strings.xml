@@ -3,4 +3,5 @@
     <string name="test">You did it! Number of Guests: %d</string>
 
     <string name="instructions">All you gotta do is press the buttons!</string>
+    <string name="help_icon">Help</string>
 </resources>
