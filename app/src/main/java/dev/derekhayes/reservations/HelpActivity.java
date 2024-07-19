@@ -20,9 +20,7 @@ public class HelpActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help);
 
-        ActionBar actionBar = getSupportActionBar();
-        assert actionBar != null;
-        actionBar.setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -35,10 +33,6 @@ public class HelpActivity extends AppCompatActivity {
         if (item.getItemId() == R.id.about) {
             Intent intent = new Intent(this, AboutActivity.class);
             this.startActivity(intent);
-            return true;
-        }
-        else if (item.getItemId() == android.R.id.home) {
-            this.finish();
             return true;
         }
 

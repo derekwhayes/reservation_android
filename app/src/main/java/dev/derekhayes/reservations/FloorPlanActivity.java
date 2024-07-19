@@ -25,9 +25,7 @@ public class FloorPlanActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_floor_plan);
 
-        ActionBar actionBar = getSupportActionBar();
-        assert actionBar != null;
-        actionBar.setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Intent intent = getIntent();
         int numGuests = intent.getIntExtra("numGuests", 6);
@@ -63,10 +61,6 @@ public class FloorPlanActivity extends AppCompatActivity {
         else if (item.getItemId() == R.id.about) {
             Intent intent = new Intent(this, AboutActivity.class);
             this.startActivity(intent);
-            return true;
-        }
-        else if (item.getItemId() == android.R.id.home) {
-            this.finish();
             return true;
         }
 
