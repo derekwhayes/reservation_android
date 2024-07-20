@@ -7,4 +7,6 @@
 
     <string name="about">You can make reservations in this here application!</string>
     <string name="about_icon">About</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

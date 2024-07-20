@@ -52,6 +52,12 @@
             android:layout_below="@id/textView2"
             style="@style/WaiterText" />
 
+        <androidx.fragment.app.FragmentContainerView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/fragment_container_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="dev.derekhayes.reservations.SelectTimeFragment" />
 
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
