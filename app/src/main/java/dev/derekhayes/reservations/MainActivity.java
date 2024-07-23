@@ -19,7 +19,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements ConfirmSubmitFragment.ConfirmSubmitListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,12 +29,19 @@ public class MainActivity extends AppCompatActivity {
         if (savedInstanceState == null) {
             FragmentManager fragmentManager = getSupportFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.add(R.id.fragment_container_view, new SelectTimeFragment());
+            fragmentTransaction.replace(R.id.fragment_container_view, new SelectTimeFragment());
             fragmentTransaction.commit();
         }
     }
 
     public void submitButton(View view) {
+
+        FragmentManager manager = getSupportFragmentManager();
+        ConfirmSubmitFragment dialog = new ConfirmSubmitFragment();
+        dialog.show(manager, "warningDialog");
+    }
+
+    public void onConfirmSubmit() {
         EditText et=(EditText)findViewById(R.id.editText);
         try {
             Toast toast;
@@ -44,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                         Toast.LENGTH_LONG);
             }
             else {
-                if(numGuests>0 && numGuests<7) {
+                if(numGuests>0) {
                     toast=Toast.makeText(this,"thank you for the reservation", Toast.LENGTH_LONG);
 
                     Intent intent = new Intent(this, FloorPlanActivity.class);
@@ -80,4 +87,10 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    public void onConfirmSubmit(boolean confirmed) {
+        if (confirmed) {
+            onConfirmSubmit();
+        }
+    }
 }
