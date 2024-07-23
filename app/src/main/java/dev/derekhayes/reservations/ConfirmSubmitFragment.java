@@ -36,7 +36,7 @@ public class ConfirmSubmitFragment extends DialogFragment {
     @NonNull
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(requireActivity());
+        AlertDialog.Builder builder = new AlertDialog.Builder(requireActivity(), R.style.CustomAlertDialog);
         builder.setTitle("Confirm");
         builder.setMessage("Please confirm your selection.");
         builder.setPositiveButton("OK", (dialog, which) -> {

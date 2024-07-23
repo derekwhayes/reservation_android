@@ -9,6 +9,12 @@
     <string name="about_icon">About</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="waiter_icon_img_description">Waiter icon</string>
+    <string name="how_many_seats_text">How many seats are you requesting?</string>
+    <string name="fri_text">FRI</string>
+    <string name="sat_text">SAT</string>
+    <string name="sun_text">SUN</string>
+    <string name="submit_text">Submit</string>
 
     <string-array name="time_slot_string_array">
         <item>4:00 PM</item>
