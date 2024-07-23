@@ -43,27 +43,34 @@ public class MainActivity extends AppCompatActivity implements ConfirmSubmitFrag
 
     public void onConfirmSubmit() {
         EditText et=(EditText)findViewById(R.id.editText);
+        int numGuests;
+        Toast toast;
         try {
-            Toast toast;
-            int numGuests = Integer.parseInt(et.getText().toString());
-            if(numGuests>6) {
-                toast=Toast.makeText(this,"please call 123-456-7890 to make a reservation for parties larger than 6",
-                        Toast.LENGTH_LONG);
-            }
-            else {
-                if(numGuests>0) {
-                    toast=Toast.makeText(this,"thank you for the reservation", Toast.LENGTH_LONG);
+            numGuests = Integer.parseInt(et.getText().toString());
+            try {
+
+                if (numGuests > 6) {
+                    toast = Toast.makeText(this, "please call 123-456-7890 to make a reservation for parties larger than 6",
+                            Toast.LENGTH_LONG);
+                } else if (numGuests > 0) {
+                    toast = Toast.makeText(this, "thank you for the reservation", Toast.LENGTH_LONG);
 
                     Intent intent = new Intent(this, FloorPlanActivity.class);
                     intent.putExtra("numGuests", numGuests);
                     startActivity(intent);
+                } else {
+                    toast = Toast.makeText(this, "the number of guests must be greater than 0", Toast.LENGTH_LONG);
                 }
-                else  toast=Toast.makeText(this,"the number of guests must be greater than 0", Toast.LENGTH_LONG);
+                toast.show();
             }
+            catch(Exception e){
+                    e.printStackTrace();
+            }
+        }
+        catch (NumberFormatException e) {
+            toast=Toast.makeText(this, "please enter number of diners", Toast.LENGTH_LONG);
             toast.show();
         }
-        catch (Exception e){
-            e.printStackTrace();  }
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
