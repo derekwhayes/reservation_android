@@ -10,6 +10,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.room.Room;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,6 +20,9 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import dev.derekhayes.reservations.repo.ReservationRepository;
+import dev.derekhayes.reservations.repo.ReservationsDatabase;
+
 public class MainActivity extends AppCompatActivity implements ConfirmSubmitFragment.ConfirmSubmitListener {
 
     @Override
@@ -26,12 +30,16 @@ public class MainActivity extends AppCompatActivity implements ConfirmSubmitFrag
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        ReservationRepository.getInstance(this);
+
         if (savedInstanceState == null) {
             FragmentManager fragmentManager = getSupportFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container_view, new SelectTimeFragment());
             fragmentTransaction.commit();
         }
+
+
     }
 
     public void submitButton(View view) {
